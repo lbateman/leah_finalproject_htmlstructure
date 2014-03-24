@@ -69,14 +69,27 @@
 	</header>
 	
 	<section class="content">
+	
+		<!-- Show Graphic: Image
+		Title of Show (default title field): Text
+		Author(s): Text
+		Director: Text
+		Text for Licensing Company (optional): Text 
+		Description of Show: WYSIWYG editor -->
+	
 		<img src="img/rosen_guild_logo.jpg" alt="Logo for Rosencrantz and Guildenstern Are Dead">
 		<h1>Rosencrantz & Guildenstern Are Dead</h1>
 		<h2>by Tom Stoppard</h2>
 		<h3>directed by Elizabeth Hunter</h3>
 		<p>presented by special arrangement with Samuel French, Inc.</p>
 		
-		<p>What would you do if you suddenly found yourself living in the world of Hamlet? When Rosencrantz & Guildenstern find themselves rushing toward Elsinore with the rules of probability playing funny tricks, they don't know which way is up! Celebrate T@F's 10th Anniversary with Tom Stoppard's wise and witty masterwork.</p>
+		<p>What would you do if you suddenly found yourself living in the world of Hamlet? When Rosencrantz & Guildenstern find themselves rushing toward Elsinore with the rules of probability playing funny tricks, they don't know which way is up! Celebrate T@F's 10th Anniversary with Tom Stoppard's wise and witty masterwork.</p>		
 
+		<!-- Performance Schedule: Repeater with subfields
+			Day of Week: Text
+			Date: Datepicker
+			Time: Text -->
+		
 		<h2>Performance Schedule</h2> 
 		<table> <!-- These tables might be better in some form of grid layout, but I'll leave them as tables for now -->
 			<tr> <!-- But as far as the semantics goes, tables are probably OK here: http://css-tricks.com/complete-guide-table-element/ -->
@@ -116,17 +129,32 @@
 			</tr>
 		</table>
 
+		<!-- Location: Repeater with subfields
+			Venue Name: Text
+			Venue Address or Area: Text
+			Map (optional): Google Map -->
+		
 		<h2>Location</h2>
 		<p><a href="#">The Davis Square Theatre</a>, Davis Square, Somerville, MA
 		<!-- Map (optional): Google Map -->
+		
+		<!-- Ticket Information (optional): Repeater with subfields (I'm assuming that they may use multiple services in future, but I'm not sure exactly how online ticketing works)
+			Ticket Service Logo: Image
+			Link to Ticket Service: URL
+			Ticket Service Description: WYSIWYG editor -->
 		
 		<h2>Buy Tickets</h2>
 		<a href="#"><img src="img/BPT_buy_tickets_large.png" alt="Brown Paper Tickets logo"></a>
 		<p>To purchase your tickets before the show, visit our online ticketing system at <a href="#">Brown Paper Tickets</a>. Please note that this option has a $1.99 service fee per ticket, and that tickets may not be purchased online the day of a performance.</p>
 		
+		<!-- Description of Director (optional): WYSIWYG editor -->
 		<h2>Director</h2>
 		<p>Elizabeth Hunter is the founding Artistic Director of Theatre@First. Ten years ago, she directed Rosencrantz and Guildenstern Are Dead for the first time, followed by Murder in the Cathedral, Talley's Folly, The Merry Wives of Windsor, The Margaret Ghost, Much Ado About Nothing, Never After, Pride & Prejudice, and The Vagina Monologues. She also founded Bare Bones: Staged Readings at T@F and directed Clubfoot, or Tales from the Back of an Ambulance as part of that ongoing series. As an actor, she has appeared with T@F for Festival@First 2: Summer Splash: My Boyfriend's Wife (Raina), You Can't Take It With You (Penny), Equus (Dysart), and Bare Bones: Mrs. Hawking (Mrs. Hawking). Elizabeth is excited to celebrate Theatre@First's 10th Anniversary by returning to the beginning and seeing how far we've come.</p>
 
+		<!-- Cast List (optional): Repeater with subfields
+			Character's Name (optional): Text
+			Actor's Name: Text -->
+			
 		<h2>Cast</h2>
 		<table>
 			<tr>
@@ -195,6 +223,10 @@
 			</tr>
 		</table>
 
+		<!-- Production Team (optional): Repeater with subfields
+			Production Role (optional): Text
+			Name: Text -->
+		
 		<h2>Production Team</h2>
 		<table>
 			<tr>
@@ -259,6 +291,7 @@
 			</tr>
 		</table>
 
+		<!-- Cast Photos (optional): Gallery using Flexslider -->
 		<h2>Photo Gallery</h2>
 		<ul>
 			<li><img src="img/rosen_guild_2014_cast.jpg" alt="Cast photo"></li>
